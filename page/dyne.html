@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Receptu - Kuchařka do kapsy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1> Kuchařka do kapsy</h1>
+    <nav>
+      <a href="../index.html">Recepty</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="recipe-detail">
+      <h2>Krémová Dýňová Polévka</h2>
+      
+      <div class="servings-box">
+        <label for="servings">Počet porcí:</label>
+        <input type="number" id="servings" value="4" min="1" max="10">
+      </div>
+
+      <h3>Ingredience:</h3>
+      <ul id="ingredientsList">
+        <li><span class="amount" data-base="1">1</span> menší dýně (např. hokaido)</li>
+        <li><span class="amount" data-base="1">1</span> l zeleninového vývaru</li>
+        <li><span class="amount" data-base="100">100</span> ml smetany ke šlehání</li>
+        <li><span class="amount" data-base="2">2</span> lžíce hladké mouky</li>
+        <li><span class="amount" data-base="150">150</span> ml vody</li>
+        <h4>Na dochucení:</h4>
+        <li> sůl</li>
+        <li> mletý pepř</li>
+        <li> kari</li>
+        <li> chilli</li>
+        <li> muškátový oříšek</li>
+        <li> bylinky</li>
+      </ul>
+      <h3>Postup přípravy:</h3>
+      <li>Dýni oloupeme a vydlabeme část se semínky (hokaido loupat nemusíme). Poté ji nakrájíme na kostičky.</li>
+      <li>Nakrájenou dýni dáme do hrnce, zalijeme vývarem a uvaříme doměkka asi 15–20 minut. Podle chuti přidáme sůl a muškátový květ.</li>
+      <li>Pak polévku rozmixujeme dohladka a necháme ještě krátce probublávat.</li>
+      <li>Nakonec polévku zahustíme moukou rozmíchanou ve vodě, nebo jíškou. Přidáme smetanu, zbylé koření podle chuti, promícháme a necháme asi 20 minut provařit.</li>
+      <li>Konzistenci polévky můžeme upravit naředěním trochou vývaru.</li>
+    </article>
+
+    <section class="timer-box">
+      <h3>Kuchyňská minutka</h3>
+      <div class="timer-controls">
+        <input type="number" id="timerMinutes" value="3" min="1" max="60"> minut
+        <button id="timerToggleBtn" class="btn" type="button">Spustit odpočet</button>
+      </div>
+      <div id="timerDisplay" class="timer-display">03:00</div>
+    </section>
+  </main>
+
+  <script src="../js/script.js"></script>
+
+    <footer>
+        <p>&copy; 2026 VŠB, Barbora Žemličková</p>
+  </footer>
+</body>
+</html>

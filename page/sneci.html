@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Receptu - Kuchařka do kapsy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1> Kuchařka do kapsy</h1>
+    <nav>
+      <a href="../index.html">Recepty</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="recipe-detail">
+      <h2>Šneci z kynutého těsta</h2>
+      
+      <div class="servings-box">
+        <label for="servings">Počet šneků:</label>
+        <input type="number" id="servings" value="20" min="10" max="40">
+      </div>
+
+      <h3>Ingredience:</h3>
+      <ul id="ingredientsList">
+        <li><span class="amount" data-base="500">500</span> g hladké mouky</li>
+        <li><span class="amount" data-base="300">300</span> ml mléka</li>
+        <li><span class="amount" data-base="25">25</span> g droždí</li>
+        <li><span class="amount" data-base="1">1</span> lžička cukru</li>
+        <li>špetka soli</li>
+        <li><span class="amount" data-base="10">10</span> ml olivového oleje</li>
+        <h3>Na rajčatovou náplň:</h3>
+        <li><span class="amount" data-base="120">120</span> g rajčatové passaty</li>
+        <li><span class="amount" data-base="120">120</span> g šunky</li>
+        <li><span class="amount" data-base="100">100</span> g goudy</li>
+        <li><span class="amount" data-base="1">1</span> lžička sušeného oregana</li>
+        <li>špetka mletého černého pepře</li>
+        <h3>Na špenátovou náplň:</h3>
+        <li><span class="amount" data-base="200">200</span> g čerstvého špenátu</li>
+        <li><span class="amount" data-base="2">2</span> stroužek česneku</li>
+        <li><span class="amount" data-base="100">100</span> g fety</li>
+        <li>špetka mletého černého pepře</li>
+        <li>olej</li>
+        <li>oregano</li>
+        <h3>Na potření:</h3>
+        <li>vejce</li>
+      </ul>
+      <h3>Postup přípravy:</h3>
+      <li>Příprava kvásku: mléko lehce zahřejeme (nesmí být horké), 
+        přidáme do něj cukr a rozdrobíme droždí. Přibližně 10 minut necháme vzejít kvásek.</li>
+      <li>Do mísy prosejeme mouku, přidáme sůl, olej a vzešlý kvásek. Vypracujeme hladké, nelepivé a pružné těsto. 
+        Těsto poprášíme moukou, zakryjeme čistou utěrkou a necháme na teplém místě přibližně hodinu kynout,
+         dokud nezdvojnásobí svůj objem.</li>
+         <li>Mezitím připravíme špenátovou náplň: čerstvý špenát spaříme, případně mražený špenát necháme na pánvi s kapkou oleje povolit. 
+            Špenát důkladně přes sítko nebo v utěrce vymačkáme, abychom ho zbavili veškeré přebytečné tekutiny.
+             Nakonec ho dochutíme utřeným česnekem, pepřem a solí.</li>
+        <li>Vykynuté těsto rozdělíme na dvě poloviny a každou vyválíme na pomoučněné ploše do tvaru obdélníku.</li>
+        <li>Na těsto na špenátové šneky rovnoměrně rozprostřeme vychladlý ochucený špenát, 
+                rozdrobíme na něj fetu a posypeme oreganem.
+                 Na pizza šneky potřeme těsto passatou, na ni rozložíme sýr, plátky šunky a posypeme italským kořením a pepřem.</li>
+        <li>Těsto s náplní opatrně zarolujeme do pevné rolády a nakrájíme ostrým nožem na plátky široké cca 2,5 cm.</li>
+        <li>Šneky rozložíme s dostatečnými rozestupy na plech vyložený pečicím papírem a necháme je ještě cca 15 minut kynout.</li>
+        <li>Nakonec šneky potřeme rozšlehaným vejcem, 
+            posypeme sezamovými semínky a pečeme v rozehřáté troubě na 180 °C asi 25 minut, dokud nejsou na povrchu dozlatova upečení.</li>
+    </article>
+
+    <section class="timer-box">
+      <h3>Kuchyňská minutka</h3>
+      <div class="timer-controls">
+        <input type="number" id="timerMinutes" value="20" min="1" max="60"> minut
+        <button id="timerToggleBtn" class="btn" type="button">Spustit odpočet</button>
+      </div>
+      <div id="timerDisplay" class="timer-display">20:00</div>
+    </section>
+  </main>
+
+  <script src="../js/script.js"></script>
+
+    <footer>
+        <p>&copy; 2026 VŠB, Barbora Žemličková</p>
+  </footer>
+</body>
+</html>

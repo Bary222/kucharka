@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Receptu - Kuchařka do kapsy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1> Kuchařka do kapsy</h1>
+    <nav>
+      <a href="../index.html">Recepty</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="recipe-detail">
+      <h2>Nadýchané Palačinky</h2>
+      
+      <div class="servings-box">
+        <label for="servings">Počet porcí:</label>
+        <input type="number" id="servings" value="2" min="1" max="10">
+      </div>
+
+      <h3>Ingredience:</h3>
+      <ul id="ingredientsList">
+        <li><span class="amount" data-base="125">125</span> g hladké mouky</li>
+        <li><span class="amount" data-base="250">250</span> ml mléka</li>
+        <li><span class="amount" data-base="1">1</span> ks vejce</li>
+        <li>špetka soli</li>
+        <li>olej na smažení</li>
+        <li>džem nebo marmeláda</li>
+      </ul>
+      <h3>Postup přípravy:</h3>
+      <li>Vejce rozklepneme, oddělíme žloutky od bílků. Z bílků a špetky soli vyšleháme tuhý sníh.</li>
+      <li>Žloutky rozšleháme s mlékem, po částech vmícháme mouku, aby se netvořily hrudky a nakonec vmícháme sníh z bílků.</li>
+      <li>Těsto na palačinky necháme chvíli odležet. Větší pánev zahřejeme, potřeme troškou oleje a naběračkou vlijeme těsto, které roztáhneme po celé pánvi.</li>
+      <li>Palačinky smažíme po obou stranách. Před každým smažením potíráme pánev olejem znovu, aby se nepřipálily.</li>
+      <li>
+Nadýchané palačinky potíráme marmeládou nebo džemem podle chuti, na ozdobu můžeme posypat cukrem nebo dozdobit ušlehanou smetanou. Ale není třeba, chutnají i jen tak.</li>
+    </article>
+
+    <section class="timer-box">
+      <h3>Kuchyňská minutka</h3>
+      <div class="timer-controls">
+        <input type="number" id="timerMinutes" value="3" min="1" max="60"> minut
+        <button id="timerToggleBtn" class="btn" type="button">Spustit odpočet</button>
+      </div>
+      <div id="timerDisplay" class="timer-display">03:00</div>
+    </section>
+  </main>
+
+  <script src="../js/script.js"></script>
+
+    <footer>
+        <p>&copy; 2026 VŠB, Barbora Žemličková</p>
+  </footer>
+</body>
+</html>

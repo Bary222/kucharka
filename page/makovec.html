@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Kuchařka do kapsy</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Kuchařka do kapsy</h1>
+    <nav>
+      <a href="../index.html">Recepty</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="recipe-detail">
+      <h2>Makovec</h2>
+
+      <div class="servings-box">
+        <label for="servings">Počet porcí:</label>
+        <input type="number" id="servings" value="12" min="1" max="24">
+      </div>
+
+      <h3>Ingredience:</h3>
+      <ul id="ingredientsList">
+        <li><span class="amount" data-base="500">500</span> g polohrubé mouky</li>
+        <li><span class="amount" data-base="300">300</span> g cukru krupice</li>
+        <li><span class="amount" data-base="250">250</span> g mletého máku</li>
+        <li><span class="amount" data-base="130">130</span> g rozpuštěného (vlažného) másla</li>
+        <li><span class="amount" data-base="2">2</span> vejce</li>
+        <li><span class="amount" data-base="500">500</span> ml vlažného mléka</li>
+        <li><span class="amount" data-base="1">1</span> kypřicí prášek do pečiva</li>
+        <li><span class="amount" data-base="1">1</span> sáček vanilkového cukru</li>
+        <li>nastrouhaná citronová kůra</li>
+      </ul>
+
+      <h3>Na vymazání a vysypání formy:</h3>
+      <ul>
+        <li>tuk</li>
+        <li>hrubá mouka</li>
+      </ul>
+      <h3>Postup přípravy:</h3>
+      <li> Připravíme plech, který vymažeme tukem a vysypeme hrubou moukou. Zapneme nahřívat troubu na 180 °C.</li>
+       <li> V míse smícháme všechny sypké suroviny. Přidáme tekuté a opět vše smícháme a vypracujeme hladké těsto.</li>
+        <li>Těsto rozprostřeme na připravený plech a vložíme do vyhřáté trouby.</li>
+        <li>Pečeme přibližně 40 minut na 180 °C. Tento čas je pouze orientační. Správné propečení vyzkoušíme vpíchnutím špejle, která po vytažení musí zůstat suchá, bez zbytků těsta.</li>
+    </article>
+
+    <section class="timer-box">
+      <h3>Kuchyňská minutka</h3>
+      <div class="timer-controls">
+        <input type="number" id="timerMinutes" value="45" min="1" max="120"> minut
+        <button id="timerToggleBtn" class="btn" type="button">Spustit odpočet</button>
+      </div>
+      <div id="timerDisplay" class="timer-display">45:00</div>
+    </section>
+  </main>
+
+  <script src="../js/script.js"></script>
+
+  <footer>
+    <p>&copy; 2026 VŠB, Barbora Žemličková</p>
+  </footer>
+</body>
+</html>
